@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iAD CMS</title>
+	<!-- BOOTSTRAPS -->
+	<link type="text/css" href="./Libero - Flat Admin Interface_files/bootstrap.min.css" rel="stylesheet">
+	<!-- THEMES -->
+	<link type="text/css" href="./Libero - Flat Admin Interface_files/theme.css" rel="stylesheet">
+	<!--ICONS-->
+	<link type="text/css" href="./Libero - Flat Admin Interface_files/font-awesome.css" rel="stylesheet">
+	<!--FONTS-->
+	<link type="text/css" href="./Libero - Flat Admin Interface_files/css" rel="stylesheet">
+	<link type="text/css" href="./Libero - Flat Admin Interface_files/css(1)" rel="stylesheet">
+	<!--JAVASCRIPTS-->
+	<script src="./Libero - Flat Admin Interface_files/jquery-1.9.1.min.js"></script>
+	<script src="./Libero - Flat Admin Interface_files/jquery-ui-1.10.1.custom.min.js"></script>
+	<script src="./Libero - Flat Admin Interface_files/bootstrap.min.js"></script>
+</head>
+<body class="wysihtml5-supported">
+	<div class="frame" style="min-height: 1545px;"><div class="sidebar">
+<div class="wrapper">
+
+	<a href="#" class="profile">
+		<img src="./Libero - Flat Admin Interface_files/id_logo.png" class="avatar pull-left" width="65" style="margin-right: 15px; border-radius: 4px">
+CMS V 0.1
+	</a>
+	<ul class="nav nav-list">
+		<li class="active">
+			<a href="iad_dashboard2.html"><i class="icon-dashboard"></i>Dashboard</a>
+		</li>
+		<li class="nav-header">General</li>
+		<li class="active">
+			<a href="iad_dashboard.html"><i class="icon-desktop"></i>Templates<b class="label">4</b></a>
+		</li>
+		<!-- <li>
+			<a href="activity.html"><i class="icon-bullhorn"></i>Activity</a>
+		</li> -->
+<!-- 		<li>
+			<a href="http://bootstrapstyler.com/preview/_/libero/page-message.html"><i class="icon-inbox"></i>Message<b class="label">6</b></a>
+		</li>
+		<li>
+			<a href="http://bootstrapstyler.com/preview/_/libero/page-people.html"><i class="icon-group"></i>People</a>
+		</li>
+		<li>
+			<a href="http://bootstrapstyler.com/preview/_/libero/page-calendar.html"><i class="icon-calendar"></i>Calendar</a>
+		</li>
+		<li>
+			<a href="http://bootstrapstyler.com/preview/_/libero/page-gallery.html"><i class="icon-picture"></i>Gallery</a>
+		</li>
+		<li>
+			<a href="http://bootstrapstyler.com/preview/_/libero/page-profile.html"><i class="icon-user"></i>Profile</a>
+		</li> -->
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Elements</li>
+		<li>
+			<a href="#"><i class="icon-text-width"></i>Typography</a>
+		</li>
+		<li>
+			<a href="#"><i class="icon-table"></i>Styling</a>
+		</li>
+		<li>
+			<a href="#"><i class="icon-list-alt"></i>Forms</a>
+		</li>
+		<li>
+			<a href="#"><i class="icon-pushpin"></i>Buttons</a>
+		</li>
+<!-- 		<li>
+			<a href="#"><i class="icon-truck"></i>Icons</a>
+		</li>
+		<li>
+			<a href="#"><i class="icon-bar-chart"></i>Charts</a>
+		</li> -->
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Administration</li>
+		<li>
+			<a href="#"><i class="icon-picture"></i>Projects</a>
+		</li>
+		<li>
+			<a href="index.html"><i class="icon-key"></i>Sign Out</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Bandwidth Transfer</li>
+		<li>
+			<div class="progress progress-danger small">
+				<div class="bar" style="width: 80%;"></div>
+			</div>
+			<div>19419.94 / 12000 MB</div>
+		</li>
+		<li class="nav-header">Disk Space Usage</li>
+		<li>
+			<div class="progress small">
+				<div class="bar" style="width: 20%;"></div>
+			</div>
+			<div>304.44 / 8000 MB</div>
+		</li>
+	</ul>
+</div>
+</div>
+<div class="content" style="min-height: 1036px;">
+
+	<div class="navbar navbar-static-tops">
+	<div class="navbar-inner">		
+		<a href="javascript:void(0);" class="btn pull-left toggle-sidebar hidden-desktop"><i class="icon-reorder"></i></a>
+	</div>
+</div><!--/.navbar -->	
+	<div class="content-head">
+		<ul class="breadcrumb">
+			<li><a href="iad_dashboard2.html">Dashboard</a> <span class="divider"><i class="icon-angle-right"></i></span></li>
+			<li class="active">iAd Layout</li>
+		</ul>
+		<h2>NBCUniversal Orlando Parks</h2>
+		<div class="muted">
+			Build or edit your iAD templates<br/>
+			<a href="#myModal" role="button" class="btn" data-toggle="modal" style="margin:10px 0 0 0">+ Add New Template</a>
+
+						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h3 id="myModalLabel">New Template</h3>
+							</div>
+							<div class="modal-body">
+								<p>
+										<div class="dropdown">
+											<a class="dropdown-toggle btn" data-toggle="dropdown" href="#">Add Template <i class="icon-caret-down"></i></a>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+												<li><a href="#">Videos</a></li>
+												<li><a href="#">Offers</a></li>
+												<li><a href="#">More Info</a></li>
+												<li><a href="#">Social</a></li>
+												<li><a href="#">Show Times</a></li>
+												<li><a href="#">Profiles</a></li>
+												<li><a href="#">Image Gallery</a></li>
+												<li><a href="#">Store Locator</a></li>
+											</ul>
+											<button type="reset" class="btn inline">Add</button>
+										</div>
+										<br/>
+										<section>
+										<div class="control-group">
+							<div class="modal-header">
+								<button type="button" class="btn inline" style="background: #da4f49; color: #fff; right: 0; position: absolute;" data-dismiss="modal" aria-hidden="true">x</button>
+								<h3 id="myModalLabel">Videos</h3>
+							</div>
+							<div class="modal-header">
+								<button type="button" class="btn inline" style="background: #da4f49; color: #fff; right: 0; position: absolute;" data-dismiss="modal" aria-hidden="true">x</button>
+								<h3 id="myModalLabel">Offers</h3>
+							</div>
+							<div class="modal-header">
+								<button type="button" class="btn inline" style="background: #da4f49; color: #fff; right: 0; position: absolute;" data-dismiss="modal" aria-hidden="true">x</button>
+								<h3 id="myModalLabel">More Info</h3>
+							</div>
+							<div class="modal-header">
+								<button type="button" class="btn inline" style="background: #da4f49; color: #fff; right: 0; position: absolute;" data-dismiss="modal" aria-hidden="true">x</button>
+								<h3 id="myModalLabel">Social</h3>
+							</div>
+
+									<br/>
+									<label class="" for="basicinput">Custom Template</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="Template Name" class="span4">
+										<!-- <span class="help-inline">Helpful text here.</span> -->
+										<input class="btn" type="reset" value="Save">
+									</div>
+								</div></section>
+								</p>
+							</div>
+							<div class="modal-footer">
+								<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+								<button class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+
+	<!-- 		<button type="submit" class="btn btn-primary" style="margin: 15px 0 0 0px; float:right;">Preview iAd</button> -->
+			<a href="http://nbcumedialabs.com/dev/vlad/iAdCMS/preview_universal_park.html" role="button" target="_blank" class="btn btn-primary" data-toggle="modal" style="margin: 15px 0 0 0px; float:right;">Preview iAd</a>
+
+		</div>
+	</div>
+	<div class="content-body">
+		<section class="module">
+			<div class="module-head">
+				<ul class="module-control pull-left">
+					<li class="active"><a href="#tab-1" data-toggle="tab">General/Header</a></li>
+					<li class=""><a href="#tab-2" data-toggle="tab">Videos</a></li>
+					<li class=""><a href="#tab-3" data-toggle="tab">Offers</a></li>
+					<li class=""><a href="#tab-4" data-toggle="tab">More Info</a></li>
+					<li class=""><a href="#tab-5" data-toggle="tab">Social</a></li>
+				</ul>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<div class="tab">
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="tab-1">
+							<form class="form-vertical">
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Custom Background</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./univeral_background.png" class="span8">
+										<input class="btn" type="reset" value="Upload"><br/>
+										<img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/universal_bg.png"/>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Custom Application Splash</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./splash_background.png" class="span8">
+										<input class="btn" type="reset" value="Upload"><br/>
+										<img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/universal_splash.png"/>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Choose Main Layout</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadiosa1" id="optionsRadios1" value="option1" checked>
+											4 Video Layout<br/><img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/home_layout1.png"/>
+										</label>
+										<label class="radio inline">
+											<input type="radio" name="optionsRadiosa1" id="optionsRadios1" value="option1">
+											5 Video Layout <br/><img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/home_layout2.png"/>
+										</label>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Custom Logo</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./univeral_logo.png" class="span8">
+										<!-- <span class="help-inline">Helpful text here.</span> -->
+										<input class="btn" type="reset" value="Upload">
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Custom logo (Mobile Retina)</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="Disabled" class="span8" disabled="">
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput"></label>
+									<div class="controls">
+										<input data-title="A tooltip for the input" type="text" placeholder="Hover to view the tooltip…" data-original-title="" class="span8 tip">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Custom Background</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./univeral_background.png" class="span8">
+										<!-- <span class="help-inline">Helpful text here.</span> -->
+										<input class="btn" type="reset" value="Upload">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Prepended Input</label>
+									<div class="controls">
+										<div class="input-prepend">
+											<span class="add-on">#</span><input class="span8" type="text" placeholder="prepend">       
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Appended Input</label>
+									<div class="controls">
+										<div class="input-append">
+											<input type="text" placeholder="5.000" class="span8"><span class="add-on">$</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Dropdown Button</label>
+									<div class="controls">
+										<div class="dropdown">
+											<a class="dropdown-toggle btn" data-toggle="dropdown" href="#">Dropdown Button <i class="icon-caret-down"></i></a>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+												<li><a href="#">First Row</a></li>
+												<li><a href="#">Second Row</a></li>
+												<li><a href="#">Third Row</a></li>
+												<li><a href="#">Fourth Row</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Dropdown</label>
+									<div class="controls">
+										<select tabindex="1" data-placeholder="Select here.." class="span8">
+											<option value="">Select here..</option>
+											<option value="Category 1">First Row</option>
+											<option value="Category 2">Second Row</option>
+											<option value="Category 3">Third Row</option>
+											<option value="Category 4">Fourth Row</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Color Scheme</label>
+									<div class="controls">
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+											<div style="width:120px; height:20px; background: #f5f5f5;"></div>
+										</label> 
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked="">
+											<div style="width:120px; height:20px; background: #006dcc;"></div>
+										</label> 
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											<div style="width:120px; height:20px; background: #dddddd;"></div>
+										</label>
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											<div style="width:120px; height:20px; background: #5bb75b;"></div>
+										</label>
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+											<div style="width:120px; height:20px; background: #faa732;"></div>
+										</label> 
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											<div style="width:120px; height:20px; background: #da4f49;"></div>
+										</label> 
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											<div style="width:120px; height:20px; background: #363636;"></div>
+										</label>
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											<div style="width:120px; height:20px; background: #f5f5f5;"></div>
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Custom Color</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="#457309" class="span8">
+										<!-- <span class="help-inline">Helpful text here.</span> -->
+										<input class="btn" type="reset" value="Save">
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Inline Radiobuttons</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+											Option one
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Option two
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											Option three
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Custom HTML</label>
+								</div>
+
+						<br/>
+						<div id="toolbar">
+						<p>
+							<span class="btn-toolbar" data-toggle="buttons-checkbox">
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="bold" title="CTRL+B" href="javascript:;" unselectable="on"><i class="icon-bold"></i></a>
+									<a class="btn" data-wysihtml5-command="italic" title="CTRL+I" href="javascript:;" unselectable="on"><i class="icon-italic"></i></a>
+								</span>
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="createLink" href="javascript:;" unselectable="on"><i class="icon-link"></i></a>
+									<a class="btn" data-wysihtml5-command="insertImage" href="javascript:;" unselectable="on"><i class="icon-picture"></i></a>
+								</span>
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="insertUnorderedList" href="javascript:;" unselectable="on"><i class="icon-list-ul"></i></a>
+									<a class="btn" data-wysihtml5-command="insertOrderedList" href="javascript:;" unselectable="on"><i class="icon-list-ol"></i></a>
+								</span>
+								<span class="btn-group">
+									<a class="btn" data-wysihtml5-action="change_view" href="javascript:;" unselectable="on">switch to html view</a>
+								</span>
+							</span>
+						</p>								    
+						<p data-wysihtml5-dialog="createLink" style="display: none;">
+							<label>
+								Link:
+								<input type="text" data-wysihtml5-dialog-field="href" value="http://">
+							</label>
+							<a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+						</p>
+				    
+						<p data-wysihtml5-dialog="insertImage" style="display: none;">
+							<label>
+								Image:
+								<input type="text" data-wysihtml5-dialog-field="src" value="http://">
+							</label>
+							<label>
+								Align:
+								<select data-wysihtml5-dialog-field="className">
+									<option value="">default</option>
+									<option value="wysiwyg-float-left">left</option>
+									<option value="wysiwyg-float-right">right</option>
+								</select>
+							</label>
+							<a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+						</p>
+					</div>
+
+					<div class="controls">
+						<textarea class="span8" rows="5"></textarea>
+					</div>
+					<br/>
+
+								<div class="control-group">
+									<div class="controls">
+										<button type="submit" class="btn btn-primary">Save</button>
+										<button type="reset" class="btn">Reset</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- tab2 ********************************-->
+						<div class="tab-pane fade" id="tab-2">
+							<form class="form-vertical">
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Video 1</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./universal_video1.mp4" class="span8">
+										<input class="btn" type="reset" value="Upload"><br/>
+										<img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/uni_vid1.png"/>
+									</div>
+									<br/>
+									<label class="control-label" for="basicinput">Video 1 Textarea</label>
+									<div class="controls">
+										<textarea class="span8" rows="5" text="">The Wizarding World of Harry Potter™ (2 mins)
+
+Explore the two lands of The Wizarding World of Harry Potter located within two amazing theme parks: Universal Studios Florida® and Universal's Islands of Adventure®.</textarea>
+									</div>
+									<br/>
+									<div class="control-group">
+									<label class="control-label">Text Align</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+											Left
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+											Center
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											Right
+										</label>
+									</div>
+								</div>
+								</div>
+								<br/>
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Video 2</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./universal_video2.mp4" class="span8">
+										<input class="btn" type="reset" value="Upload"><br/>
+										<img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/uni_vid2.png"/>
+									</div>
+									<br/>
+									<label class="control-label" for="basicinput">Video 2 Textarea</label>
+									<div class="controls">
+										<textarea class="span8" rows="5" text="">The Wizarding World of Harry Potter™ (2 mins)
+
+Explore the two lands of The Wizarding World of Harry Potter located within two amazing theme parks: Universal Studios Florida® and Universal's Islands of Adventure®.</textarea>
+									</div>
+									<br/>
+									<div class="control-group">
+									<label class="control-label">Text Align</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1">
+											Left
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2" checked>
+											Center
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios2" id="optionsRadios3" value="option3">
+											Right
+										</label>
+									</div>
+								</div>
+								</div>
+								<br/>
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Video 3</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./universal_video3.mp4" class="span8">
+										<input class="btn" type="reset" value="Upload"><br/>
+										<img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/uni_vid3.png"/>
+									</div>
+									<br/>
+									<label class="control-label" for="basicinput">Video 3 Textarea</label>
+									<div class="controls">
+										<textarea class="span8" rows="5" text="">Let Loose at Two Amazing Theme Parks (2 mins)
+
+Experience the fun of two amazing theme parks­ – Universal Studios® and Universal's Islands of Adventure® It's a universe of action, thrills, and excitement. Vacation Like You Mean It.</textarea>
+									</div>
+									<br/>
+									<div class="control-group">
+									<label class="control-label">Text Align</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios3" id="optionsRadios1" value="option1">
+											Left
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios3" id="optionsRadios2" value="option2" checked>
+											Center
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios3" id="optionsRadios3" value="option3">
+											Right
+										</label>
+									</div>
+								</div>
+								</div>
+								<br/>
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Video 4</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./universal_video1.mp4" class="span8">
+										<input class="btn" type="reset" value="Upload"><br/>
+										<img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/uni_vid4.png"/>
+									</div>
+									<br/>
+									<label class="control-label" for="basicinput">Video 4 Textarea</label>
+									<div class="controls">
+										<textarea class="span8" rows="5" text="">Explore Universal CityWalk® & On-Site Resort Hotels (2 mins)
+
+Hungry for something different? Enjoy the unique dining and entertainment at Universal CityWalk, just steps away from our four spectacular on-site resort hotels.</textarea>
+									</div>
+									<br/>
+									<div class="control-group">
+									<label class="control-label">Text Align</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios4" id="optionsRadios1" value="option1">
+											Left
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios4" id="optionsRadios2" value="option2" checked>
+											Center
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios4" id="optionsRadios3" value="option3">
+											Right
+										</label>
+									</div>
+								</div>
+								</div>
+
+								<div class="control-group">
+									<div class="controls">
+										<button type="submit" class="btn btn-primary">Save</button>
+										<button type="reset" class="btn">Reset</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!--tab3********************************-->
+						<div class="tab-pane fade" id="tab-3">
+							<form class="form-vertical">
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Offer 1</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./offer-ticket.png" class="span8">
+										<input class="btn" type="reset" value="Upload"><br/>
+										<img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/offer-ticket.png"/>
+									</div>
+									<br/>
+									<label class="control-label" for="basicinput">Offer 1 Textarea</label>
+									<div class="controls">
+										<textarea class="span8" rows="5" text="">Package includes: 3 Nights at the new Universal’s Cabana Bay Beach Resort. 2 Day Park to Park tickets. 
+Early Park Admission to The Wizarding World of Harry Potter™ one hour before the 
+theme park opens (valid theme park admission required). 
+Starting at $425* per adult.</textarea>
+									</div>
+									<br/>
+									<div class="control-group">
+									<label class="control-label">Text Align</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios4" id="optionsRadios1" value="option1">
+											Left
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios4" id="optionsRadios2" value="option2" checked>
+											Center
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios4" id="optionsRadios3" value="option3">
+											Right
+										</label>
+									</div>
+								</div>
+								</div>
+								<br/>
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Offer Line 1</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="2 Park Getaway Vacation Package!" class="span8">
+										<input class="btn" type="reset" value="Add New Line"><br/>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Custom Controls</label>
+									<div class="controls">
+										<label class="checkbox inline">
+											<input type="checkbox" value="" checked>
+											Lern More<br/><input class="btn" type="reset" value="Learn More">
+										</label>
+										<label class="checkbox inline">
+											<input type="checkbox" value="" checked>
+											Restrictions <br/><input class="btn" type="reset" value="Restrictions">
+										</label>
+									</div>
+								</div>
+						<br/>
+						<div id="toolbar">
+						<p>
+							<label class="control-label">Custom Page Layout</label>
+							<span class="btn-toolbar" data-toggle="buttons-checkbox">
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="bold" title="CTRL+B" href="javascript:;" unselectable="on"><i class="icon-bold"></i></a>
+									<a class="btn" data-wysihtml5-command="italic" title="CTRL+I" href="javascript:;" unselectable="on"><i class="icon-italic"></i></a>
+								</span>
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="createLink" href="javascript:;" unselectable="on"><i class="icon-link"></i></a>
+									<a class="btn" data-wysihtml5-command="insertImage" href="javascript:;" unselectable="on"><i class="icon-picture"></i></a>
+								</span>
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="insertUnorderedList" href="javascript:;" unselectable="on"><i class="icon-list-ul"></i></a>
+									<a class="btn" data-wysihtml5-command="insertOrderedList" href="javascript:;" unselectable="on"><i class="icon-list-ol"></i></a>
+								</span>
+								<span class="btn-group">
+									<a class="btn" data-wysihtml5-action="change_view" href="javascript:;" unselectable="on">switch to html view</a>
+								</span>
+							</span>
+						</p>								    
+						<p data-wysihtml5-dialog="createLink" style="display: none;">
+							<label>
+								Link:
+								<input type="text" data-wysihtml5-dialog-field="href" value="http://">
+							</label>
+							<a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+						</p>
+				    
+						<p data-wysihtml5-dialog="insertImage" style="display: none;">
+							<label>
+								Image:
+								<input type="text" data-wysihtml5-dialog-field="src" value="http://">
+							</label>
+							<label>
+								Align:
+								<select data-wysihtml5-dialog-field="className">
+									<option value="">default</option>
+									<option value="wysiwyg-float-left">left</option>
+									<option value="wysiwyg-float-right">right</option>
+								</select>
+							</label>
+							<a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+						</p>
+					</div>
+
+					<div class="controls">
+						<textarea class="span8" rows="5"><div id="restrictionsspace" data-state="main:restrictions" style="display: block;"><div id="restrictions-nav">
+    <div class="logo"></div>
+    <div class="main-items">
+        <div class="left-spacer" style="width: 365px;"></div>
+        <div class="restrictions-top">2 Park Getaway Vacation Package - Restrictions</div>
+        <div class="right-spacer" style="width: 259px;"></div>
+    </div>
+    <div id="restrictions-exit" class="menu-item exit focused" data-targetid="restrictions-exit">Close</div>
+</div>
+<div class="restrictions-notice">
+HARRY POTTER, characters, names and related indicia are trademarks of and © Warner Bros. Entertainment Inc. Harry Potter Publishing Rights © JKR.<br>
+(s14)<br>
+All prices, package inclusions &amp; options are subject to availability and to change without notice. Additional Restrictions may apply.<br>
+* Rate is per adult, tax inclusive and based on double adult occupancy for a 3-night stay at Universal’s Cabana Bay Beach Resort, standard room. Subject to availability, room type, hotel, and travel dates selected. Rate valid for bookings 10/14/14 – 6/1/15 and travel Sunday – Thursday, 10/14/14 – 11/6/14, 11/10/14 – 11/25/14, 11/30/14 – 12/18/14, 1/4/15 – 2/12/15, 4/12/15 -5/21/15, 5/25/15 – 6/4/15.&nbsp; Number of rooms available on this promotion is limited. Rates are higher on Friday &amp; Saturday nights. Additional on-site hotels, rates and travel dates available. <br>◊Requires theme park admission. Early Park Admission begins one (1) hour prior to regular scheduled park opening to one (1) Universal Orlando theme park as determined by Universal Orlando. Valid at select attractions at each park. Universal Orlando Resort reserves the right to open alternative attractions in the event that a technical problem arises or an attraction opening is delayed. Universal Parks &amp; Resorts Vacations is registered with the State of Florida as a seller of travel. Registration number ST-24215.
+</div></div></textarea>
+					</div>
+					<br/>
+
+								<div class="control-group">
+									<div class="controls">
+										<button type="submit" class="btn btn-primary">Save</button>
+										<button type="reset" class="btn">Reset</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!--tab4********************************-->
+						<div class="tab-pane fade" id="tab-4">
+							<form class="form-vertical">
+								<div class="control-group">
+									<label class="control-label" for="basicinput">More Info 1</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="./more-info.png" class="span8">
+										<input class="btn" type="reset" value="Upload"><br/>
+										<img style="padding:7px; 0 0 0" src="./Libero - Flat Admin Interface_files/more-info.png"/>
+									</div>
+									<br/>
+									<label class="control-label" for="basicinput">More Info Textarea</label>
+									<div class="controls">
+										<textarea class="span8" rows="5" text=""></textarea>
+									</div>
+									<br/>
+									<div class="control-group">
+									<label class="control-label">Text Align</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios4" id="optionsRadios1" value="option1">
+											Left
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios4" id="optionsRadios2" value="option2" checked>
+											Center
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios4" id="optionsRadios3" value="option3">
+											Right
+										</label>
+									</div>
+								</div>
+								</div>
+								<br/>
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Offer Line 1</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="2 Park Getaway Vacation Package!" class="span8">
+										<input class="btn" type="reset" value="Add New Line"><br/>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Custom Controls</label>
+									<div class="controls">
+										<label class="checkbox inline">
+											<input type="checkbox" value="" checked>
+											Lern More<br/><input class="btn" type="reset" value="Learn More">
+										</label>
+<!-- 										<label class="checkbox inline">
+											<input type="checkbox" value="">
+											Restrictions <br/><input class="btn" type="reset" value="Restrictions">
+										</label> -->
+									</div>
+								</div>
+						<br/>
+						<div id="toolbar">
+						<p>
+							<label class="control-label">Custom Page Layout</label>
+							<span class="btn-toolbar" data-toggle="buttons-checkbox">
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="bold" title="CTRL+B" href="javascript:;" unselectable="on"><i class="icon-bold"></i></a>
+									<a class="btn" data-wysihtml5-command="italic" title="CTRL+I" href="javascript:;" unselectable="on"><i class="icon-italic"></i></a>
+								</span>
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="createLink" href="javascript:;" unselectable="on"><i class="icon-link"></i></a>
+									<a class="btn" data-wysihtml5-command="insertImage" href="javascript:;" unselectable="on"><i class="icon-picture"></i></a>
+								</span>
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="insertUnorderedList" href="javascript:;" unselectable="on"><i class="icon-list-ul"></i></a>
+									<a class="btn" data-wysihtml5-command="insertOrderedList" href="javascript:;" unselectable="on"><i class="icon-list-ol"></i></a>
+								</span>
+								<span class="btn-group">
+									<a class="btn" data-wysihtml5-action="change_view" href="javascript:;" unselectable="on">switch to html view</a>
+								</span>
+							</span>
+						</p>								    
+						<p data-wysihtml5-dialog="createLink" style="display: none;">
+							<label>
+								Link:
+								<input type="text" data-wysihtml5-dialog-field="href" value="http://">
+							</label>
+							<a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+						</p>
+				    
+						<p data-wysihtml5-dialog="insertImage" style="display: none;">
+							<label>
+								Image:
+								<input type="text" data-wysihtml5-dialog-field="src" value="http://">
+							</label>
+							<label>
+								Align:
+								<select data-wysihtml5-dialog-field="className">
+									<option value="">default</option>
+									<option value="wysiwyg-float-left">left</option>
+									<option value="wysiwyg-float-right">right</option>
+								</select>
+							</label>
+							<a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+						</p>
+					</div>
+
+					<div class="controls">
+						<textarea class="span8" rows="5"></textarea>
+					</div>
+					<br/>
+
+								<div class="control-group">
+									<div class="controls">
+										<button type="submit" class="btn btn-primary">Save</button>
+										<button type="reset" class="btn">Reset</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!--tab4********************************-->
+						<div class="tab-pane fade" id="tab-5">
+						<form class="form-vertical">
+						<div class="control-group">
+									<label class="control-label" for="basicinput">Add Social Network</label>
+									<div class="controls">
+										<div class="dropdown">
+											<a class="dropdown-toggle btn" data-toggle="dropdown" href="#">Add Social Network<i class="icon-caret-down"></i></a>
+											<ul class="dropdown-menu inline" role="menu" aria-labelledby="dLabel">
+												<li><a href="#">Pintrest</a></li>
+												<li><a href="#">Snapchat</a></li>
+												<li><a href="#">Flipboard</a></li>
+												<li><a href="#">Sound Cloud</a></li>
+											</ul>
+											<button type="reset" class="btn inline">Add</button>
+										</div>
+									</div>
+									<br/>
+								</div>
+								<div class="control-group">
+									<div class="icon-facebook-sign" style="font-size: 69px;"></div><label class="control-label" for="basicinput">Facebook account</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="Universal Parks" class="span8">
+									<!-- 	<span class="help-inline">Universal Parks</span> -->
+									</div>
+								</div>
+								<br/>
+								<div class="control-group">
+									<div class="icon-twitter-sign" style="font-size: 69px;"></div><label class="control-label" for="basicinput">Twitter account</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="Universal Parks" class="span8">
+										<!-- <span class="help-inline">Universal Parks</span> -->
+									</div>
+								</div>
+								<br/>
+								<div class="control-group">
+									<div class="icon-instagram" style="font-size: 69px;"></div><label class="control-label" for="basicinput">Instagram account</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="Universal Parks NBCU" class="span8">
+								<!-- 		<span class="help-inline">Universal Parks</span> -->
+									</div>
+								</div>
+								<div class="control-group">
+									<div class="controls">
+										<button type="submit" class="btn btn-primary">Save</button>
+										<button type="reset" class="btn">Reset</button>
+									</div>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div><!--/.module-body-->
+		</section>
+
+
+	</div>
+</div><!--/.content-->
+
+</div><!-- /.frame -->
+
+
+
+<!-- WYSIHTML5 TEXT EDITOR -->
+<script src="./Libero - Flat Admin Interface_files/advanced.js"></script>
+<script src="./Libero - Flat Admin Interface_files/wysihtml5-0.3.0.min.js"></script>
+<!-- AUTOSIZE TEXTAREA -->
+<script src="./Libero - Flat Admin Interface_files/jquery.autosize-min.js"></script>
+<!-- BOOTSTRAP DATEPICKER -->
+<script src="./Libero - Flat Admin Interface_files/bootstrap-datepicker.js"></script>
+<!-- FLOT CHART -->
+<script src="./Libero - Flat Admin Interface_files/jquery.flot.js"></script>
+<script src="./Libero - Flat Admin Interface_files/jquery.flot.pie.js"></script>
+<script src="./Libero - Flat Admin Interface_files/jquery.flot.resize.js"></script>
+<!-- FULLCALENDAR -->
+<script src="./Libero - Flat Admin Interface_files/fullcalendar.custom.js"></script>
+<!-- MIXITUP -->
+<script src="./Libero - Flat Admin Interface_files/jquery.mixitup.min.js"></script>
+<!-- THEME -->
+<script src="./Libero - Flat Admin Interface_files/theme.js"></script>
+<!-- SCRIPTS: FLOT GRAPH BASIC -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder"), 
+	[ { data: d1, label: "Data A" }, { data: d2, label: "Data B" } ], {
+		lines: { 
+			show: true, 
+			fill: false, 
+			lineWidth: 1,
+			lineColor: "#fc0" 
+		},
+		points: { 
+			show: true, 
+			lineWidth: 4 
+		},
+		grid: {
+			clickable: true,
+			hoverable: true,
+			autoHighlight: true,
+			mouseActiveRadius: 10,
+			aboveData: true,
+			backgroundColor: "#fafafa",
+			borderWidth: 0,
+			borderColor: "#fc0",
+			minBorderMargin: 25,
+		},
+		colors: [ "#090", "#099",  "#609", "#900"],
+		shadowSize: 0
+	});
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: FLOT GRAPH ADVANCE -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder2"),
+		   [ { data: d1, label: "Data Y"}, { data: d2, label: "Data X" } ], {
+				lines: { 
+					show: true, 
+					fill: true, /*SWITCHED*/
+					lineWidth: 2 
+				},
+				points: { 
+					show: true, 
+					lineWidth: 3
+				},
+				grid: {
+					clickable: true,
+					hoverable: true,
+					autoHighlight: true,
+					mouseActiveRadius: 10,
+					aboveData: true,
+					backgroundColor: "#fafafa",
+					borderWidth: 0,
+					minBorderMargin: 25,
+				},
+				colors: [ "#090", "#099",  "#609", "#900"],
+				shadowSize: 0
+			 });
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder2").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: CHARTS -->
+<script>
+	// PREDEFINED DATA
+	var data = [
+					{ label: "Series1",  data: [[1,10]]},
+					{ label: "Series2",  data: [[1,30]]},
+					{ label: "Series3",  data: [[1,90]]}
+				];
+
+	// // DEFAULT
+	// $.plot($("#pie-default"), data, 
+	// {
+	// 	series: {
+	// 		pie: {
+	// 			show: true
+	// 		}
+	// 	}
+	// });
+
+	// DEFINE ACTIONS FOR pieHover & pieClick
+	function pieHover(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		$("#hover").html('<span>'+obj.series.label+' - '+percent+'%</span>');
+	}
+
+	function pieClick(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		alert(''+obj.series.label+': '+percent+'%');
+	}
+
+	// DONUT
+	$.plot($("#pie-donut"), data, 
+	{
+		series: {
+			pie: { 
+				innerRadius: 50,
+				show: true
+			}
+		}
+	});
+
+	// DONUT + INTERACTIVE
+	$.plot($("#pie-interactive"), data,
+	{
+			series: {
+				pie: {
+					innerRadius: 50,
+					show: true
+				}
+			},
+			grid: {
+				hoverable: true,
+				clickable: true
+			}
+	});
+
+	$("#pie-interactive").bind("plothover", pieHover);
+	$("#pie-interactive").bind("plotclick", pieClick);
+</script>
+<textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; height: 0px !important; min-height: 0px !important;"></textarea><div class="datepicker datepicker-dropdown dropdown-menu" style="display: none;"><div class="datepicker-days" style="display: block;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">February 2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td></tr><tr><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td></tr><tr><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day active">16</td><td class="day">17</td><td class="day">18</td></tr><tr><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td></tr><tr><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td></tr><tr><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td><td class="day new">9</td><td class="day new">10</td></tr></tbody><tfoot><tr><th colspan="7" class="today">Today</th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month active">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today">Today</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2010-2019</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today">Today</th></tr></tfoot></table></div></div><div class="datepicker datepicker-dropdown dropdown-menu" style="display: none;"><div class="datepicker-days" style="display: block;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">February 2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td></tr><tr><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td></tr><tr><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day active">16</td><td class="day">17</td><td class="day">18</td></tr><tr><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td></tr><tr><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td></tr><tr><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td><td class="day new">9</td><td class="day new">10</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month active">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2010-2019</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div></div><div class="datepicker datepicker-dropdown dropdown-menu" style="display: none;"><div class="datepicker-days" style="display: block;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">February 2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td></tr><tr><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td></tr><tr><td class="day active">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td></tr><tr><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td></tr><tr><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td></tr><tr><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td><td class="day new">9</td><td class="day new">10</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month active">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2010-2019</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div></div><div class="datepicker datepicker-dropdown dropdown-menu" style="display: none;"><div class="datepicker-days" style="display: block;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">February 2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td></tr><tr><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td></tr><tr><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td></tr><tr><td class="day">19</td><td class="day active">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td></tr><tr><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td></tr><tr><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td><td class="day new">9</td><td class="day new">10</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month active">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2010-2019</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div></div><div class="datepicker datepicker-dropdown dropdown-menu" style="display: none;"><div class="datepicker-days" style="display: block;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">February 2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td></tr><tr><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td></tr><tr><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td></tr><tr><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day active">25</td></tr><tr><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td></tr><tr><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td><td class="day new">9</td><td class="day new">10</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2012</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month active">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="datepicker-table table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-chevron-left"></i></th><th colspan="5" class="switch">2010-2019</th><th class="next" style="visibility: visible;"><i class="icon-chevron-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr></tfoot></table></div></div></body></html>
